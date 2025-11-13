@@ -9,7 +9,7 @@ model=joblib.load("random_forest.pkl")
 @app.route('/predict',methods=['GET'])
 def predict():
 
-    feature=[130,89,22.5]
+    feature=[130,89,23.5]
 
     input=np.array(feature)[1,-1]
 
