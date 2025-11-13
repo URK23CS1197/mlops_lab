@@ -43,6 +43,6 @@ jobs:
         name: model-artifact
         path: .
     - name: docker image build
-      run: docker run -t ml-flask .
+      run: docker run -t ml-flask-app .
     - name: docker build
       run: docker run -d -p 5000:5000 --name ml-container ml-flask
