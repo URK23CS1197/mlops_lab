@@ -44,5 +44,5 @@ jobs:
         path: .
     - name: docker image build
       run: docker run -t ml-flask .
-    -name: docker build
-     run: docker run -d -p 5000:5000 --name ml-container ml-flask
+    - name: docker build
+      run: docker run -d -p 5000:5000 --name ml-container ml-flask
